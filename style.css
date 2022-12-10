@@ -1,0 +1,48 @@
+/* GLOBAL */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    border: 2px solid palevioletred;
+    width: 560px;
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pixel-div {
+    width: 34.75px;
+    height: 34.75px;
+    border: 1px solid black;
+}
+
+.red-div {
+    background-color: red;
+}
+
+/* HEADER */
+
+.top-btn {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 16px;
+    border: 2px solid currentColor;
+    font-family: 'Quicksand', sans-serif;
+}
