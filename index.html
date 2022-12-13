@@ -7,15 +7,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg"
+      type="image/x-icon"
+    />
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <div class="header">
-      <button class="top-btn">Grid Sizing</button>
-    </div>
-    
-    <div class="container">
-
-    </div>
+    <header>
+      <h1>Etch-a-Sketch</h1>
+    </header>
+    <main>
+      <section class="mid">
+        <div class="left">
+          <input id="color-changer" type="color" value="#29ABF4" >
+          <input id="grid-changer" type="range" min="1" max="100" step="1" value="16" class="resize-btn"></input>
+          <span id="on-pixel"></span>
+        </div>
+        <div class="right">
+          <div class="container">
+          </div>
+          <div class="lower">
+            <button class="erase btn">Erase</button>
+            <button class="clear btn">Clear</button>
+            <button class="rainbow btn" >Rainbow</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2022 quiet-arthur <a target="_blank" href="https://github.com/quiet-arthur">
+        <img src="./icons/github-icon.png" alt="">
+      </a></p>
+    </footer>
   </body>
 </html>

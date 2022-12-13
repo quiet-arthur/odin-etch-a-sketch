@@ -5,6 +5,6 @@ Add a button to the top of the screen that will send the user a popup asking for
 --> Prompt a popup when the button is clicked --!
 --> On the prompt requires a number of squares the user wanna --!
 --> Get the user value and set it into a gridSize variable --!
---> Once entered remove the previous grid 
---> Add the new grid to the document
+--> Once entered remove the previous grid --!
+--> Add the new grid to the document 
 --> 
