@@ -34,11 +34,15 @@ function drawGrid() {
 }
 drawGrid();
 
-function erasePixel() {
-  if (colorChanger.value === "#f0f8ff") {
-    colorChanger.value = "#29abf4";
+let previousColor;
+
+function erasePixel(e) {
+  e.target.classList.toggle('enable');
+  if (colorChanger.value != "#f0f8ff") {
+    previousColor = colorChanger.value;
+    colorChanger.value = "#f0f8ff"
   } else {
-    colorChanger.value = "#F0F8FF";
+    colorChanger.value = previousColor;
   }
 }
 
@@ -50,8 +54,6 @@ function clearGrid() {
   container.innerHTML = "";
   drawGrid();
 }
-
-console.log(getHslColor)
 
 function getHslColor() {
   let hueColor = Math.floor(Math.random() * 357);
@@ -66,4 +68,13 @@ let rainbowMode;
 
 rainbowBtn.addEventListener("click", (e) => {
     rainbowMode = e.target.classList.toggle('enable');
+})
+
+
+const gameMessage = document.getElementById('game-message')
+
+window.addEventListener('keydown', (e) => {
+  if (e.altKey) {
+    gameMessage.classList.add('visible');
+  }
 })

@@ -24,6 +24,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 38px 0;
+
 }
 
 
@@ -129,9 +130,24 @@ section {
     transform: scale(1.1)
 }
 
+.enable {
+    background-color: #29ABF4;
+}
+
 .lower {
     display: flex;
     gap: 16px;
+}
+
+.visible {
+    visibility: hidden;
+}
+
+.message {
+    position: absolute;
+    font-size: 30px;
+    padding-bottom: 5rem;
+    opacity: 0.5;
 }
 
 /* FOOTER */
