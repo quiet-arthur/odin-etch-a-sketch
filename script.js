@@ -13,7 +13,6 @@ function drawGrid() {
   removePreviousGrid();
   for (let i = 0; i < gridChanger.value * gridChanger.value; i++) {
     let gridDiv = document.createElement("div");
-    gridDiv.classList.add("pixel-div");
     gridDiv.setAttribute(
       "style",
       `width: ${500 / gridChanger.value}px; height: ${
@@ -72,6 +71,7 @@ rainbowBtn.addEventListener("click", (e) => {
 
 
 const gameMessage = document.getElementById('game-message')
+
 
 window.addEventListener('keydown', (e) => {
   if (e.altKey) {
